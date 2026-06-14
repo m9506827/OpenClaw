@@ -35,8 +35,14 @@
   .header h1 { font-size: 24px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
   .header .info { text-align: right; font-size: 13px; color: var(--text-dim); }
   .header .info .date { font-size:15px; color:var(--text); }
-  .nav-link { color: var(--accent); text-decoration: none; font-size: 12px; margin-left: 8px; }
-  .nav-link:hover { text-decoration: underline; }
+  .nav-link {
+    display: inline-block; padding: 6px 14px; margin-top: 6px;
+    background: rgba(88,166,255,.12); color: var(--accent);
+    border: 1px solid rgba(88,166,255,.25); border-radius: 8px;
+    text-decoration: none; font-size: 14px; font-weight: 500;
+    transition: .15s;
+  }
+  .nav-link:hover { background: rgba(88,166,255,.2); }
 
   .stats-row { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
   .stat-card {
@@ -117,7 +123,7 @@
   <div class="info">
     <div class="date" id="currentDate"></div>
     <div>📅 W<span id="currentWeek"></span> · 更新 <span id="lastUpdate"></span></div>
-    <div style="margin-top:4px"><a class="nav-link" href="/__openclaw__/canvas/map-hutoupi.html">📍 虎頭埤</a></div>
+    <div><a class="nav-link" href="/__openclaw__/canvas/map-hutoupi.html">📍 導航到虎頭埤</a></div>
   </div>
 </div>
 
